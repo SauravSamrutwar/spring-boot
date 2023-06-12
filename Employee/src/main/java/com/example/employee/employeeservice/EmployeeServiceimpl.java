@@ -27,15 +27,15 @@ public class EmployeeServiceimpl implements EmployeeService {
 		if (id.length() > 0 && id.equals("sourabh")) {
 			if(password.equals("abcd@123"))
 			{
-			return "authPass";
+			return "Correct Password";
 			}
 			else
 			{
-				return "noAuth";
+				return "Incorrect Password";
 			}
 		} else {
 		}
-		return "noUser";
+		return "User did not exist";
 
 	}
 	@Override
